@@ -1,0 +1,27 @@
+{
+  "2011.02077v2": {
+    "title": "Learning from Forecast Errors: A New Approach to Forecast Combinations",
+    "authors": [
+      "Tae-Hwy Lee",
+      "Ekaterina Seregina"
+    ],
+    "summary": "Forecasters often use common information and hence make common mistakes. We\npropose a new approach, Factor Graphical Model (FGM), to forecast combinations\nthat separates idiosyncratic forecast errors from the common errors. FGM\nexploits the factor structure of forecast errors and the sparsity of the\nprecision matrix of the idiosyncratic errors. We prove the consistency of\nforecast combination weights and mean squared forecast error estimated using\nFGM, supporting the results with extensive simulations. Empirical applications\nto forecasting macroeconomic series shows that forecast combination using FGM\noutperforms combined forecasts using equal weights and graphical models without\nincorporating factor structure of forecast errors.",
+    "pdf_url": "http://arxiv.org/pdf/2011.02077v2",
+    "published": "2020-11-04"
+  },
+  "1903.10684v1": {
+    "title": "Probabilistic Load Forecasting via Point Forecast Feature Integration",
+    "authors": [
+      "Qicheng Chang",
+      "Yishen Wang",
+      "Xiao Lu",
+      "Di Shi",
+      "Haifeng Li",
+      "Jiajun Duan",
+      "Zhiwei Wang"
+    ],
+    "summary": "Short-term load forecasting is a critical element of power systems energy\nmanagement systems. In recent years, probabilistic load forecasting (PLF) has\ngained increased attention for its ability to provide uncertainty information\nthat helps to improve the reliability and economics of system operation\nperformances. This paper proposes a two-stage probabilistic load forecasting\nframework by integrating point forecast as a key probabilistic forecasting\nfeature into PLF. In the first stage, all related features are utilized to\ntrain a point forecast model and also obtain the feature importance. In the\nsecond stage the forecasting model is trained, taking into consideration point\nforecast features, as well as selected feature subsets. During the testing\nperiod of the forecast model, the final probabilistic load forecast results are\nleveraged to obtain both point forecasting and probabilistic forecasting.\nNumerical results obtained from ISO New England demand data demonstrate the\neffectiveness of the proposed approach in the hour-ahead load forecasting,\nwhich uses the gradient boosting regression for the point forecasting and\nquantile regression neural networks for the probabilistic forecasting.",
+    "pdf_url": "http://arxiv.org/pdf/1903.10684v1",
+    "published": "2019-03-26"
+  }
+}

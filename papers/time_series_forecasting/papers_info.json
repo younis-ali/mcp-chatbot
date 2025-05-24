@@ -1,0 +1,21 @@
+{
+  "1303.0117v1": {
+    "title": "Inter Time Series Sales Forecasting",
+    "authors": [
+      "Manisha Gahirwal"
+    ],
+    "summary": "Combining forecast from different models has shown to perform better than\nsingle forecast in most time series. To improve the quality of forecast we can\ngo for combining forecast. We study the effect of decomposing a series into\nmultiple components and performing forecasts on each component separately...\nThe original series is decomposed into trend, seasonality and an irregular\ncomponent for each series. The statistical methods such as ARIMA, Holt-Winter\nhave been used to forecast these components. In this paper we focus on how the\nbest models of one series can be applied to similar frequency pattern series\nfor forecasting using association mining. The proposed method forecast values\nhas been compared with Holt Winter method and shown that the results are better\nthan Holt Winter method",
+    "pdf_url": "http://arxiv.org/pdf/1303.0117v1",
+    "published": "2013-03-01"
+  },
+  "2406.05088v1": {
+    "title": "Optimizing Time Series Forecasting Architectures: A Hierarchical Neural Architecture Search Approach",
+    "authors": [
+      "Difan Deng",
+      "Marius Lindauer"
+    ],
+    "summary": "The rapid development of time series forecasting research has brought many\ndeep learning-based modules in this field. However, despite the increasing\namount of new forecasting architectures, it is still unclear if we have\nleveraged the full potential of these existing modules within a properly\ndesigned architecture. In this work, we propose a novel hierarchical neural\narchitecture search approach for time series forecasting tasks. With the design\nof a hierarchical search space, we incorporate many architecture types designed\nfor forecasting tasks and allow for the efficient combination of different\nforecasting architecture modules. Results on long-term-time-series-forecasting\ntasks show that our approach can search for lightweight high-performing\nforecasting architectures across different forecasting tasks.",
+    "pdf_url": "http://arxiv.org/pdf/2406.05088v1",
+    "published": "2024-06-07"
+  }
+}
