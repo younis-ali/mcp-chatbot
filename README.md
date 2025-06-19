@@ -82,13 +82,13 @@ The server stores paper information in JSON files organized by topic, while the 
 
 2. Run the client in a separate terminal:
    ```bash
-   uv run src/client.py
+   uv run main.py
    ```
    The client connects to the server, initializes the chatbot, and starts the interactive chat loop.
 
 3. Interact with the chatbot:
    - Enter a query like "Search for papers on quantum computing" or "Get info for paper 1234.56789".
-   - Type `quit` to exit the chat loop.
+   - Ctrl+ C to exit.
 
 ## Project Structure
 
@@ -99,7 +99,8 @@ The server stores paper information in JSON files organized by topic, while the 
 │   ├── research_server.py    # FastMCP server with arXiv search tools
 │   ├── keys.json             # API keys (not tracked in git)
 ├── mcp_config.json           # MCP server configuration
-├── README.md                 
+├── README.md
+├── main.py                   # Entry point                   
 ```
 
 ## Example Queries
