@@ -90,6 +90,8 @@ The server stores paper information in JSON files organized by topic, while the 
    - Enter a query like "Search for papers on quantum computing" or "Get info for paper 1234.56789".
    - Ctrl+ C to exit.
 
+<video controls src="MCP Server.mp4" title="Title"></video>
+
 ## Project Structure
 
 ```
