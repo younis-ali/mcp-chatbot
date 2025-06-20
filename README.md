@@ -1,7 +1,6 @@
-
 # MCP Agntic AI for Research Papers
 
-This project implements a chatbot using the Model Context Protocol (MCP) to search and retrieve information about research papers from arXiv. The chatbot allows us to query papers by topic and extract detailed information about specific papers.
+This project implements a chatbot using the Model Context Protocol (MCP) to search and retrieve information about research papers from arXiv. The chatbot allows you to query papers by topic and extract detailed information about specific papers.
 
 ## Overview
 
@@ -21,15 +20,15 @@ The server stores paper information in JSON files organized by topic, while the 
 
 ## Requirements
 
-- Python 3.8+
-- Dependencies (install via `uv`):
+- Python 3.12+
+- Dependencies (install via `uv` or `pip`):
   - `arxiv`
   - `mcp`
   - `openai`
-  - `nest_asyncio`
+  - `nest-asyncio`
   - `python-dotenv`
 - OpenAI API key (stored in `src/keys.json`)
-- `uv` (optional, for running the server)
+- `uv` (recommended, for running the server and client)
 
 ## Installation
 
@@ -39,7 +38,14 @@ The server stores paper information in JSON files organized by topic, while the 
    cd <repository-directory>
    ```
 
-2. Install dependencies using `uv` (recommended) or `pip`:
+2. Install dependencies using `uv` (recommended):
+   ```bash
+   uv pip install -r pyproject.toml
+   ```
+   Or with `pip`:
+   ```bash
+   pip install -r pyproject.toml
+   ```
 
 3. Create a `src/keys.json` file with your OpenAI API key:
    ```json
@@ -48,7 +54,7 @@ The server stores paper information in JSON files organized by topic, while the 
    }
    ```
 
-4. Ensure the MCP configuration file (`mcp_config.json`) is set up correctly in the project root:
+4. Ensure the MCP server configuration in `src/server_config.json` is set up correctly:
    ```json
    {
        "mcpServers": {
@@ -88,21 +94,21 @@ The server stores paper information in JSON files organized by topic, while the 
 
 3. Interact with the chatbot:
    - Enter a query like "Search for papers on quantum computing" or "Get info for paper 1234.56789".
-   - Ctrl+ C to exit.
+   - Type 'quit' to exit.
 
-![alt text](<MCP Server.gif>)
+![MCP Server](MCP%20Server.gif)
 
 ## Project Structure
 
 ```
 ├── papers/                   # Directory for storing paper information (auto-created)
 ├── src/
-│   ├── client.py             # MCP client with chatbot implementation
+│   ├── mcp_chatbot.py        # MCP client with chatbot implementation
 │   ├── research_server.py    # FastMCP server with arXiv search tools
 │   ├── keys.json             # API keys (not tracked in git)
-├── mcp_config.json           # MCP server configuration
+│   ├── server_config.json    # MCP server configuration
 ├── README.md
-├── main.py                   # Entry point                   
+├── main.py                   # Entry point
 ```
 
 ## Example Queries
@@ -122,8 +128,8 @@ The server stores paper information in JSON files organized by topic, while the 
 ## Notes
 
 - The server creates a `papers` directory to store JSON files containing paper information, organized by topic (e.g., `papers/quantum_computing/papers_info.json`).
-- The client uses `gpt-4o-mini` by default. Update the model in `client.py` if needed.
-- The system assumes `uv` is installed for running scripts. Modify the `command` in `mcp_config.json` if using a different tool (e.g., `python`).
+- The client uses `gpt-4o-mini` by default. Update the model in `src/mcp_chatbot.py` if needed.
+- The system assumes `uv` is installed for running scripts. Modify the `command` in `server_config.json` if using a different tool (e.g., `python`).
 
 ## Future Improvements
 
